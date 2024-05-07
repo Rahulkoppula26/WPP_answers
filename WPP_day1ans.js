@@ -1,7 +1,7 @@
 let dayNumber = new Date().getDay();
 switch (dayNumber) {
     case 0:
-        console.log("Today is : .");
+        console.log("Today is : Sunday.");
         break;
     case 1:
         console.log("Today is : Monday.");
@@ -23,7 +23,7 @@ switch (dayNumber) {
         break;
 
     default:
-        console.log("Not a valid input");
+        console.log("Error");
         break;
 }
 let currentTime = new Date();
