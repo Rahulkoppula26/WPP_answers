@@ -28,8 +28,9 @@ switch (dayNumber) {
 }
 let currentTime = new Date();
 let hours = currentTime.getHours();
+hour = hours>=12 ? hours - 12 : hours;
 let minutes=currentTime.getMinutes();
 let secs=currentTime.getSeconds();
-let ampm = hours>=12 ? "PM" :"AM";
-let digitalTime = `${hours} ${ampm} : ${minutes} : ${secs}`;
+let ampm = (hours>=12) ? "PM" :"AM";
+let digitalTime = `${hour} ${ampm} : ${minutes} : ${secs}`;
 console.log(`Current time is : ${digitalTime}`);
